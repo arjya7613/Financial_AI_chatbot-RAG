@@ -20,7 +20,7 @@ def build_index():
         pdf_docs = loader.load()
 
         # 2. B) Load CSV from Directory & create document
-        csv_loader = CSVLoader(file_path="./data/Apple Dataset.csv", encoding="utf-8")
+        csv_loader = CSVLoader(file_path="./data/Apple_Dataset.csv", encoding="utf-8")
         csv_docs = csv_loader.load()
 
         documents = csv_docs + pdf_docs
